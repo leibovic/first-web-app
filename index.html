@@ -1,0 +1,229 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+    <title>Building Your First Mobile Web App</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link rel="stylesheet" href="themes/mozilla/styles/style.css">
+    <style>
+        #cover section {
+          background: #fff;
+        }
+        #cover header {
+          margin: 0;
+        }
+        .slide.shout h2.smaller {
+          font-size: 80px;
+        }
+    </style>
+</head>
+<body class="list">
+    <header class="caption">
+      <h1>Building Your First Mobile Web App</h1>
+      <p><a href="http://blog.margaretleibovic.com">Margaret Leibovic</a></p>
+    </header>
+
+    <div class="slide" id="cover"><div>
+      <section>
+        <header>
+          <h2>Building Your First Mobile Web App</h2>
+        </header>
+        <footer class="byline"><a href="http://blog.margaretleibovic.com">Margaret Leibovic</a></footer>
+      </section>
+    </div></div>
+
+    <div class="slide" id="2"><div>
+      <section>
+        <header>
+          <h2>Basics of a web app</h2>
+        </header>
+        <ul>
+          <li>HTML: Creates structure for content</li>
+          <li>CSS: Styles appearance</li>
+          <li>JavaScript: Enables interaction</li>
+          <li><a href="http://jsfiddle.net/PBM6K/">See an example of these three techologies working together</a></li>
+        </ul>
+      </section>
+    </div></div>
+
+    <div class="slide" id="2"><div>
+      <section>
+        <header>
+          <h2>Publishing your app</h2>
+        </header>
+        <ul>
+          <li>manifest.webapp</li>          
+          <li>Packaged apps vs. hosted apps</li>
+        </ul>
+      </section>
+    </div></div>
+
+
+    <div class="slide shout" id="3"><div>
+      <section>
+        <h2 class="smaller">Let's build an app!</h2>
+      </section>
+    </div></div>
+
+    <div class="slide" id="2"><div>
+      <section>
+        <header>
+          <h2>Demo app: stopwatch</h2>
+        </header>
+        <img src=""/>
+      </section>
+    </div></div>
+
+
+    <div class="slide" id="2"><div>
+      <section>
+        <header>
+          <h2>Make your own copy of stopwatch</h2>
+        </header>
+        <ul>
+          <li>Create a <a href="http://github.com">github</a> account if you don't have one</li>          
+          <li>Hit the "fork" button on my <a href="https://github.com/leibovic/stopwatch/">stopwatch repo page</a></li>
+          <li>Try making a simple commit on the website, such as editing the <code>README</code> file</li>
+          <li>See your app in action at http://yourusername.github.com/stopwatch/</li>
+        </ul>
+      </section>
+    </div></div>
+
+    <div class="slide" id="2"><div>
+      <section>
+        <header>
+          <h2>Get a local copy of stopwatch</h2>
+        </header>
+        <ul>
+          <li>Make sure <a href="">git</a> is installed on your computer</li>    
+          <li>In a terminal, navigate to where you want to keep your app files</li>      
+          <li>Run <code>git clone https://github.com/yourgithubusername/stopwatch.git</code></li>          
+          <li>Open <code>stopwatch/index.html</code> in a browser to see the local copy of your app</li>
+        </ul>
+      </section>
+    </div></div>
+
+    <div class="slide" id="2"><div>
+      <section>
+        <header>
+          <h2>Pushing local changes back to github</h2>
+        </header>
+        <ul>
+          <li>Run <code>git add .</code> to stage your changes</li>
+          <li>Run <code>git commit -m "your commit message"</code> to commit your changes</li>
+          <li>Run <code>git push</code> to push your changes</li>
+          <li>If you're new to git, <a href="http://try.github.io/levels/1/challenges">here's a good interactive tutorial</a></li>
+        </ul>
+      </section>
+    </div></div>
+
+    <div class="slide shout" id="3"><div>
+      <section>
+        <h2 class="smaller">Let's start building this app!</h2>
+      </section>
+    </div></div>
+
+    <div class="slide" id="2"><div>
+      <section>
+        <header>
+          <h2>Creating HTML to build a stopwatch</h2>
+        </header>
+        <ul>
+          <li>Clock display</li>
+          <li>Start/stop/reset buttons</li>
+        </ul>
+      </section>
+    </div></div>
+
+    <div class="slide" id="2"><div>
+      <section>
+        <header>
+          <h2>Adding CSS to style the stopwatch</h2>
+        </header>
+        <ul>
+          <li>Font</li>
+          <li>Colors</li>
+          <li>Loading external style sheets, such as <a href="http://buildingfirefoxos.com/building-blocks">building blocks</a></li>
+          <li>Using the inspector/style editor</li>
+        </ul>
+      </section>
+    </div></div>
+
+    <div class="slide" id="2"><div>
+      <section>
+        <header>
+          <h2>Adding JS to make stopwatch actually work</h2>
+        </header>
+        <ul>
+          <li>Getting elements from the DOM</li>
+          <li>Modifying the DOM</li>
+          <li>Using <code>addEventListener</code> to handle button clicks</li>
+          <li>Using <code>setInterval</code> to periodically update the clock</li>
+          <li>Using the JS debugger</li>
+        </ul>
+      </section>
+    </div></div>
+
+    <div class="slide" id="2"><div>
+      <section>
+        <header>
+          <h2>Making the app installable</h2>
+        </header>
+        <ul>
+          <li>Edit mainfest.webapp</li>
+          <li>Add an install button to the HTML</li>
+          <li>Add JS to do the actual installing</li>
+        </ul>
+      </section>
+    </div></div>
+
+    <div class="slide" id="2"><div>
+      <section>
+        <header>
+          <h2>Testing on a mobile device</h2>
+        </header>
+        <ul>
+          <li>Navigating to the URL on a phone</li>
+          <li>Remote developer tools</li>
+          <li>Reponsive design mode</li>
+          <li>Firefox App Manager</li>
+        </ul>
+      </section>
+    </div></div>
+
+    <div class="slide shout" id="3"><div>
+      <section>
+        <h2 class="smaller">Make it your own</h2>
+      </section>
+    </div></div>
+
+    <div class="slide" id="2"><div>
+      <section>
+        <header>
+          <h2>Ideas for future stopwatch features</h2>
+        </header>
+        <ul>
+          <li>Custom theme</li>
+          <li>Lap button</li>
+          <li>Timer</li>
+          <li>Animations (<a href="http://sriramramani.com/experiments/futura.html">here's a cool example</a>)</li>
+        </ul>
+      </section>
+    </div></div>
+
+    <div class="slide" id="2"><div>
+      <section>
+        <header>
+          <h2>More resources</h2>
+        </header>
+        <ul>
+          <li><a href="https://marketplace.firefox.com/developers">Firefox Marketplace Developer Hub</a></li>
+          <li><a href="https://developer.mozilla.org/en-US/Apps/Developing">MDN App Development Documentation</a></li>
+        </ul>
+      </section>
+    </div></div>
+
+    <script src="scripts/script.js"></script>
+    <!-- Copyright © 2010–2012 Vadim Makeev — pepelsbey.net -->
+</body>
+</html>
