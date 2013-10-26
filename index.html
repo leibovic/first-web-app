@@ -40,9 +40,9 @@
           <h2>Basics of a web app</h2>
         </header>
         <ul>
-          <li>HTML: Creates structure for content</li>
-          <li>CSS: Styles appearance</li>
-          <li>JavaScript: Enables interaction</li>
+          <li><a href="https://developer.mozilla.org/learn/html">HTML</a>: Creates structure for content</li>
+          <li><a href="https://developer.mozilla.org/learn/css">CSS</a>: Styles appearance</li>
+          <li><a href="https://developer.mozilla.org/learn/javascript">JavaScript</a>: Enables interaction</li>
           <li><a href="http://jsfiddle.net/PBM6K/">See an example of these three techologies working together</a></li>
         </ul>
       </section>
@@ -54,12 +54,11 @@
           <h2>Publishing your app</h2>
         </header>
         <ul>
-          <li>manifest.webapp</li>          
-          <li>Packaged apps vs. hosted apps</li>
+          <li><a href="https://developer.mozilla.org/en-US/Apps/Developing/Manifest">manifest.webapp</a></li>
+          <li><a href="https://marketplace.firefox.com/developers/docs/quick_start">Packaged apps vs. hosted apps</a></li>
         </ul>
       </section>
     </div></div>
-
 
     <div class="slide shout" id="4"><div>
       <section>
@@ -68,19 +67,9 @@
     </div></div>
 
     <div class="slide" id="5"><div>
-      <section style="text-align:center;">
-        <header style="margin-bottom:10px;">
-          <h2>Demo app: stopwatch</h2>
-        </header>
-        <img src="pictures/stopwatch.png"/>
-      </section>
-    </div></div>
-
-
-    <div class="slide" id="6"><div>
       <section>
         <header>
-          <h2>Make your own copy of stopwatch</h2>
+          <h2>Make your own copy of stopwatch (my demo app)</h2>
         </header>
         <ul>
           <li>Create a <a href="http://github.com">github</a> account if you don't have one</li>          
@@ -91,7 +80,7 @@
       </section>
     </div></div>
 
-    <div class="slide" id="7"><div>
+    <div class="slide" id="6"><div>
       <section>
         <header>
           <h2>Get a local copy of stopwatch</h2>
@@ -105,7 +94,90 @@
       </section>
     </div></div>
 
+    <div class="slide shout" id="7"><div>
+      <section>
+        <h2 class="smaller">Let's start hacking on this app!</h2>
+      </section>
+    </div></div>
+
     <div class="slide" id="8"><div>
+      <section>
+        <header>
+          <h2>Creating HTML to build a stopwatch</h2>
+        </header>
+        <ul>
+          <li>The HTML for the app is kept in <code>index.html</code></li>
+          <li>Use an <code>&lt;h1&gt;</code> tag to create clock display</li>
+          <code>&lt;h1 id="clock"&gt;00:00&lt;/h1&gt;</code>
+          <li>Use an <code>&lt;button&gt;</code> tags to create start/stop and reset buttons</li>
+          <code>&lt;button id="start-stop"&gt;Start&lt;/button&gt;</code><br>
+          <code>&lt;button id="reset" class="danger"&gt;Reset&lt;/button&gt;</code>
+          <li>Use the <a href="https://developer.mozilla.org/en-US/docs/Tools/Page_Inspector">page inspector</a> to debug your HTML</li>
+        </ul>
+      </section>
+    </div></div>
+
+    <div class="slide" id="9"><div>
+      <section>
+        <header>
+          <h2>Adding CSS to style the stopwatch</h2>
+        </header>
+        <ul>
+          <li>The CSS for the app is kept in <code>css/stopwatch.css</code></li>
+          <li>Load this CSS file in the HTML with a <code>&lt;link&gt;</code> tag</li>
+          <code>&lt;link rel="stylesheet" href="css/stopwatch.css"&gt;</code>
+          <li>Try editing some style rules</li>
+          <code>color: red;</code><br>
+          <code>background-color: black;</code>
+          <li>Use the <a href="https://developer.mozilla.org/en-US/docs/Tools/Style_Editor">style editor</a> to debug your CSS</li>
+        </ul>
+      </section>
+    </div></div>
+
+    <div class="slide" id="10"><div>
+      <section>
+        <header>
+          <h2>Use third-party CSS and fonts</h2>
+        </header>
+        <ul>
+          <li>Load <a href="http://buildingfirefoxos.com/building-blocks">an external CSS file</a> with a <code>&lt;link&gt;</code> tag</li>
+          <code>&lt;link rel="stylesheet" href="http://buildingfirefoxos.github.io/Building-Blocks/style/buttons.css"&gt;</code>
+          <li>Load <a href="http://buildingfirefoxos.com/building-blocks">an external font</a> with a <code>&lt;link&gt;</code> tag</li>
+          <code>&lt;link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans"&gt;</code>
+        </ul>
+      </section>
+    </div></div>
+
+    <div class="slide" id="11"><div>
+      <section>
+        <header>
+          <h2>Adding JS to make stopwatch actually work</h2>
+        </header>
+        <ul>
+          <li>The JS for the app is kept in <code>js/stopwatch.js</code></li>
+          <li>Load this CSS file in the HTML with a <code>&lt;script&gt;</code> tag</li>
+          <code>&lt;script type="text/javascript" src="js/stopwatch.js"&gt;</code>
+          <li>Take a look at the <code>setupStopwatch</code> function to see how it works</li>
+          <li>Use the <a href="https://developer.mozilla.org/en-US/docs/Tools/Debugger">JS debugger</a> to debug your JS</li>
+        </ul>
+      </section>
+    </div></div>
+
+    <div class="slide" id="12"><div>
+      <section>
+        <header>
+          <h2>Making the app installable</h2>
+        </header>
+        <ul>
+          <li>Edit the <code>mainfest.webapp</code> file</li>
+          <li>Add an install button to the HTML</li>
+          <code>&lt;button id="install"&gt;Install Stopwatch&lt;/button&gt;</code>
+          <li>Take a look at the <code>setupInstallButton</code> function to see how this button works</li>
+        </ul>
+      </section>
+    </div></div>
+
+    <div class="slide" id="13"><div>
       <section>
         <header>
           <h2>Pushing local changes back to github</h2>
@@ -119,83 +191,23 @@
       </section>
     </div></div>
 
-    <div class="slide shout" id="9"><div>
-      <section>
-        <h2 class="smaller">Let's start building this app!</h2>
-      </section>
-    </div></div>
-
-    <div class="slide" id="10"><div>
-      <section>
-        <header>
-          <h2>Creating HTML to build a stopwatch</h2>
-        </header>
-        <ul>
-          <li>Clock display</li>
-          <li>Start/stop/reset buttons</li>
-        </ul>
-      </section>
-    </div></div>
-
-    <div class="slide" id="11"><div>
-      <section>
-        <header>
-          <h2>Adding CSS to style the stopwatch</h2>
-        </header>
-        <ul>
-          <li>Font</li>
-          <li>Colors</li>
-          <li>Loading external style sheets, such as <a href="http://buildingfirefoxos.com/building-blocks">building blocks</a></li>
-          <li>Using the inspector/style editor</li>
-        </ul>
-      </section>
-    </div></div>
-
-    <div class="slide" id="12"><div>
-      <section>
-        <header>
-          <h2>Adding JS to make stopwatch actually work</h2>
-        </header>
-        <ul>
-          <li>Getting elements from the DOM</li>
-          <li>Modifying the DOM</li>
-          <li>Using <code>addEventListener</code> to handle button clicks</li>
-          <li>Using <code>setInterval</code> to periodically update the clock</li>
-          <li>Using the JS debugger</li>
-        </ul>
-      </section>
-    </div></div>
-
-    <div class="slide" id="13"><div>
-      <section>
-        <header>
-          <h2>Making the app installable</h2>
-        </header>
-        <ul>
-          <li>Edit mainfest.webapp</li>
-          <li>Add an install button to the HTML</li>
-          <li>Add JS to do the actual installing</li>
-        </ul>
-      </section>
-    </div></div>
-
     <div class="slide" id="14"><div>
       <section>
         <header>
-          <h2>Testing on a mobile device</h2>
+          <h2>Testing your mobile app</h2>
         </header>
         <ul>
-          <li>Navigating to the URL on a phone</li>
-          <li>Remote developer tools</li>
-          <li>Reponsive design mode</li>
-          <li>Firefox App Manager</li>
+          <li>Navigate to the URL on a phone</li>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Tools/Remote_Debugging">Remote developer tools</a></li>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Tools/Responsive_Design_View">Reponsive design view</a></li>
+          <li><a href="https://hacks.mozilla.org/2013/10/introducing-the-firefox-os-app-manager/">Firefox OS app manager</a></li>
         </ul>
       </section>
     </div></div>
 
     <div class="slide shout" id="15"><div>
       <section>
-        <h2 class="smaller">Make it your own</h2>
+        <h2 class="smaller">Make it your own!</h2>
       </section>
     </div></div>
 
